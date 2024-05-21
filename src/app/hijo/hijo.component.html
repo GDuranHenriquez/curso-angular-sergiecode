@@ -3,7 +3,14 @@
 <div class="horizontalLine"></div>
 
 <div>
+    <button (click)="incrementar()">Incrementar</button>
+    <button (click)="decrementar()">Decrementar</button>
+</div>
+
+
+<div>
     <label for="entrada">Ecribir mensaje para el padre:</label>
     <input type="text" id="entrada" [(ngModel)]="mensaje">
     <button type="button" (click)="enviarMensaje()">Enviar mensaje al padre</button>
 </div>
+

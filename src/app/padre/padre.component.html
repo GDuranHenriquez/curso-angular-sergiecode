@@ -5,7 +5,9 @@
 <button (click)="decrementar()">Decrementar</button>
 <div class="horizontalLine"></div>
 
-<app-hijo [recibeHijo] = "messagePadre" (mensajeDesdeHijo)="recibirMensaje($event)"/>
+<app-hijo [recibeHijo] = "messagePadre" (mensajeDesdeHijo)="recibirMensaje($event)"
+(incrementarDesdeHijo)="incrementar()" (decrementarDesdeHijo)="decrementar()"/>
+
 <h5>El mensaje recibido desde el hijo es: {{reciboMensaje}}</h5>
 <div class="horizontalLine"></div>
 
