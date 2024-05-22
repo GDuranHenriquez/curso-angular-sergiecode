@@ -12,6 +12,10 @@ export class PadreComponent implements OnInit {
   reciboMensaje: string = "";
 
   nombre?: string;
+  fecha?: Date = new Date()
+  dolar: number = 36.64
+  pi?: number = Math.PI;
+  factor: number = 0.5
 
   ngOnInit(): void {
     this._servicioFamiliar.setHermanoGrande('Juan')
